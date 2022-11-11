@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bibli.iml" filepath="$PROJECT_DIR$/.idea/Bibli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BibliJava/BibliJava.iml" filepath="$PROJECT_DIR$/BibliJava/BibliJava.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-123.90987471714786" y="346.8464082278018">DVD</node>
+    <node x="-11.310222418447296" y="204.41269731327247">User</node>
+    <node x="-379.76532263854403" y="-79.67640151015149">Bibli</node>
+    <node x="-403.20185638546394" y="343.5225025922384">CD</node>
+    <node x="-270.57154397199696" y="343.5225025922384">Book</node>
+    <node x="-344.26532263854403" y="173.92305054104347">Ressource</node>
+    <node x="-36.35961432447563" y="-6.113747075576953">Emprunt</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Emprunt" target="Ressource" relationship="TO_ONE">
+      <point x="-77.50038567552437" y="-2.5292442305158147E-4" />
+      <point x="-179.851" y="65.886" />
+      <point x="-179.851" y="141.0" />
+      <point x="-285.265" y="141.0" />
+      <point x="3.2263854404845915E-4" y="-30.000050541043464" />
+    </edge>
+    <edge source="CD" target="Ressource" relationship="GENERALIZATION">
+      <point x="-1.4361453605715724E-4" y="-14.4995025922384" />
+      <point x="-368.202" y="318.0" />
+      <point x="-285.265" y="318.0" />
+      <point x="3.2263854404845915E-4" y="29.999949458956536" />
+    </edge>
+    <edge source="Bibli" target="Emprunt" relationship="TO_MANY">
+      <point x="94.5" y="0.0" />
+      <point x="-116.85549233186592" y="-7.676401510151493" />
+      <point x="-116.85549233186592" y="41.204157918332925" />
+      <point x="-77.5" y="-24.682095006090123" />
+    </edge>
+    <edge source="DVD" target="Ressource" relationship="GENERALIZATION">
+      <point x="-1.252828521387528E-4" y="-14.500408227801813" />
+      <point x="-83.41" y="318.0" />
+      <point x="-285.265" y="318.0" />
+      <point x="3.2263854404845915E-4" y="29.999949458956536" />
+    </edge>
+    <edge source="Book" target="Ressource" relationship="GENERALIZATION">
+      <point x="-4.5602800304322955E-4" y="-14.4995025922384" />
+      <point x="-228.572" y="318.0" />
+      <point x="-285.265" y="318.0" />
+      <point x="3.2263854404845915E-4" y="29.999949458956536" />
+    </edge>
+    <edge source="Emprunt" target="User" relationship="TO_ONE">
+      <point x="4.049391906028333" y="72.0" />
+      <point x="0.0" y="-44.0" />
+    </edge>
+    <edge source="Bibli" target="Ressource" relationship="TO_MANY">
+      <point x="3.703392562215413E-4" y="71.99984208166707" />
+      <point x="-285.2649522992878" y="141.0" />
+      <point x="-285.265" y="141.0" />
+      <point x="3.2263854404845915E-4" y="-30.000050541043464" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.5" showDependencies="true" x="-132.5" y="182.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

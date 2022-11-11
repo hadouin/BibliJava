@@ -1,0 +1,54 @@
+@startuml Réseaux des Bibliothèques de Paris
+' Elements
+package "com.hadouin.bibli" {
+
+  Class Bibli as "Bibliothèque" {
+    +codePostal: int
+    +name: String
+    +resources: List<Resource>
+    +emprunts: List<Emprunt>
+
+  }
+
+  Class User {
+    -id: int
+    -email: String
+
+  }
+
+  Abstract Resource {
+    +genre
+  }
+
+  Class DVD {
+
+  }
+
+  Class CD {
+
+  } 
+
+  Class Livre {
+
+  }
+
+  Class Emprunt {
+    +resource: Resource
+    +startDate
+    +endDate
+    +user: User
+  }
+}
+
+' Connections
+Resource <|-- DVD
+Resource <|-- CD
+Resource <|-- Livre
+
+Bibli "1" o-- " * " Resource
+Bibli "1" o- "*" Emprunt
+
+Emprunt " * " *-- "1" User 
+Emprunt "1" *-- "1" Resource
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml question4
+skinparam backgroundColor transparent
+
+Class Class {
+  +public 
+  #protected 
+  -private 
+  ~package
+
+  +public()
+  #protected() 
+  -private()
+  ~package()
+}
+@enduml

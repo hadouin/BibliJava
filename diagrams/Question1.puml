@@ -1,0 +1,6 @@
+@startuml question1
+skinparam backgroundColor transparent
+Class Class 
+abstract abstract
+Interface Interface
+@enduml

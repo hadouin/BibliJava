@@ -1,0 +1,8 @@
+@startuml question5
+Abstract Abstract
+Interface Interface
+Class Class
+
+Abstract <|-- Class : inherit
+Interface <|.. Class : implement
+@enduml
